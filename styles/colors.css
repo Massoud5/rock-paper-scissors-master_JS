@@ -1,0 +1,31 @@
+:root{
+    /* # Primary */
+
+    /* Scissors Gradient */
+    --SG1: #ec9e0e; 
+    --SG2: #eca922;
+    /* Paper Gradient */
+    --PG1: #4865f4; 
+    --PG2: #5671f5;
+    /* Rock Gradient */
+    --RG1: #dc2e4e; 
+    --RG2: #dd405d;
+    /* Lizard Gradient */
+    --LG1: #834fe3; 
+    --LG2: #8c5de5;
+    /* Pock Gradient */
+    --PoG: #40b9ce; 
+    --PoG: #52bed1;
+
+    /* ### Background */
+
+    /* Radial Gradient */
+    --RaG1: #1f3756;
+    --RaG2: #141539;
+
+    /* ## Neutral */
+
+    --Dark-Text: #3b4363;
+    --Score-Text: #2a46c0;
+    --Header-Outline: #606e85;
+}
