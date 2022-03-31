@@ -20,123 +20,70 @@
 <body>
   <main>
 
-      <section class="title-box">
+    <section class="title-box">
 
-        <h1>ROCK<br>PAPER<br>SCISSORS</h1>
+      <h1>ROCK<br>PAPER<br>SCISSORS</h1>
 
-        <div class="score-box">
-          <p id="score-text">Score</p>
-          <p id="score-num">0</p>
-        </div>  
-    
-      </section> 
+      <div class="score-box">
+        <p id="score-text">Score</p>
+        <p id="score-num">0</p>
+      </div>  
+  
+    </section> 
 
 
-      <section class="triangle-items-box">
+      <!-- <section class="triangle-items-box">
 
         <img id="bg-triangle" src="/images/bg-triangle.svg" alt="bg triangle">
 
         <div class="hands">
           
-          <div class="paper">
-            <button type="button" class="hand-btn" id="paper-btn">
-              <img class="hand" id="paper" src="/images/icon-paper.svg" alt="paper icon">
-            </button>
-          </div>
-
-          <div class="rock">
-            <button type="button" class="hand-btn" id="rock-btn">
-              <img class="hand" id="rock" src="/images/icon-rock.svg" alt="rock icon">
-            </button>
-          </div>
-
-          <div class="scissors">
-            <button type="button" class="hand-btn" id="scissors-btn">
-              <img class="hand" id="scissors" src="/images/icon-scissors.svg" alt="scissors icon">
-            </button>
-          </div>
-
+          <button type="button" class="hand-btn" id="paper-btn">
+            <img class="hand" src="/images/icon-paper.svg" alt="paper icon">
+          </button>
+        
+          <button type="button" class="hand-btn" id="rock-btn">
+            <img class="hand" src="/images/icon-rock.svg" alt="rock icon">
+          </button>
+          
+          <button type="button" class="hand-btn" id="scissors-btn">
+            <img class="hand" src="/images/icon-scissors.svg" alt="scissors icon">
+          </button>
+          
         </div>
 
-      </section>
+      </section> -->
       
 
+    <div id="choices-p-box">
+      <p class="messages p-el" id="you-picked">You Picked</p>
+      <p class="messages p-el" id="pc-picked">The House Picked</p>
+    </div>
+
+
+    <div class="game-board">
+    
       <section class="player-hands">
 
-        <!-- <div class="paper">
-          <button type="button" class="hand-btn" id="paper-btn">
-            <img class="hand" id="paper" src="/images/icon-paper.svg" alt="paper icon">
-          </button>
-        </div>
-
-        <div class="rock">
-          <button type="button" class="hand-btn" id="rock-btn">
-            <img class="hand" id="rock" src="/images/icon-rock.svg" alt="rock icon">
-          </button>
-        </div>
-
-        <div class="scissors">
-          <button type="button" class="hand-btn" id="scissors-btn">
-            <img class="hand" id="scissors" src="/images/icon-scissors.svg" alt="scissors icon">
-          </button>
-        </div> -->
-
-      </section>
-
-
-      <section class="messages">
-
-      </section>
-
-      <section class="pc-hands">
-
-      </section>
-
-
-    
-      <!-- 
-
-
-
-
-
-
-
-              
-
-              <div class="pc-hands">
-                <div class="pc-paper">
-                  <button type="button" class="hand-btn pc-hand-btn" id="pc-paper-btn">
-                    <img class="hand" id="pc-paper" src="/images/icon-paper.svg" alt="pc paper icon">
-                  </button>
-                </div>
-                <div class="pc-rock">
-                  <button type="button" class="hand-btn pc-hand-btn" id="pc-rock-btn">
-                    <img class="hand" id="pc-rock" src="/images/icon-rock.svg" alt="pc rock icon">
-                  </button>
-                </div>
-                <div class="pc-scissors">
-                  <button type="button" class="hand-btn pc-hand-btn" id="pc-scissors-btn">
-                    <img class="hand" id="pc-scissors" src="/images/icon-scissors.svg" alt="pc scissors icon">
-                  </button>
-              </div>
-              <div class="pc-waiting-box">
-
-              </div>
-            </div>
-
-              
-            
-
-
-  
+        <button type="button" class="player-hand-btn" id="player-paper-btn">
+          <img class="hand" src="/images/icon-paper.svg" alt="player paper icon">
+        </button>
         
-        <div id="choices-p-box">
-          <p class="messages p-el" id="you-picked">You Picked</p>
-          <p class="messages p-el" id="pc-picked">The House Picked</p>
-        </div>
-    
+        <button type="button" class="player-hand-btn" id="player-rock-btn">
+          <img class="hand" src="/images/icon-rock.svg" alt="player rock icon">
+        </button>
+
+        <button type="button" class="player-hand-btn" id="player-scissors-btn">
+          <img class="hand" src="/images/icon-scissors.svg" alt="player scissors icon">
+        </button>
+
+      </section>
+
+
+      <section class="game-messages">
+
         <div class="final-step">
+        
           <div class="result-els">
             <p class="messages p-el" id="win">You Win</p>
             <p class="messages p-el" id="losed">You Lose</p>
@@ -145,10 +92,30 @@
           <button class="messages" id="play-again" type="button">Play Again</button>
     
         </div>
-       -->
-      
-    
-    
+
+      </section>
+
+
+      <section class="pc-hands">
+
+        <button type="button" class="hand-btn pc-hand-btn" id="pc-paper-btn">
+          <img class="hand" src="/images/icon-paper.svg" alt="pc paper icon">
+        </button>
+
+        <button type="button" class="hand-btn pc-hand-btn" id="pc-rock-btn">
+          <img class="hand" src="/images/icon-rock.svg" alt="pc rock icon">
+        </button>
+
+        <button type="button" class="hand-btn pc-hand-btn" id="pc-scissors-btn">
+          <img class="hand" src="/images/icon-scissors.svg" alt="pc scissors icon">
+        </button>
+
+        <div class="pc-waiting-box"></div>
+
+      </section>
+
+    </div>
+
     <footer>
       <div>
       <button type="button" id="rules-btn">Rules</button>
@@ -160,13 +127,13 @@
     </footer>  
   </main>
 
-    <figure>
-      <div class="rules-header">
-        <h2>RULES</h2>
-        <img id="icon-close" src="./images/icon-close.svg" alt="icon close">
-      </div>
-      <img src="/images/image-rules.svg" alt="rules img">
-    </figure>
+  <figure>
+    <div class="rules-header">
+      <h2>RULES</h2>
+      <img id="icon-close" src="./images/icon-close.svg" alt="icon close">
+    </div>
+    <img src="/images/image-rules.svg" alt="rules img">
+  </figure>
     
   <script src="/js/main.js"></script>
 </body>

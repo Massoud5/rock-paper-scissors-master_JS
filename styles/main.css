@@ -6,13 +6,10 @@
 body{
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at top, var(--RaG1),var(--RaG2));
-    height: 100%;
+    background: radial-gradient(circle at top, var(--RaG1) 30%,var(--RaG2) 90%);
+    height: 100vh;
 }
 
-main{
-    position: relative;
-}
 
 .title-box{
     display: flex;
@@ -21,8 +18,11 @@ main{
     width: 800px;
     border: 2px solid var(--Header-Outline);
     border-radius: 12px;
-    padding: 0 20px 0 25px;
-    margin: 120px auto auto auto;
+    padding: 0px 20px 0 25px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 h1{
     font-size: 30px;
@@ -53,9 +53,9 @@ h1{
 
 .triangle-items-box{
     position: absolute;
-    top: 150%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%,-50%);
 }
 #bg-triangle{
     position: absolute;
@@ -74,6 +74,9 @@ h1{
 }
 .rock{
     order: 1;
+}
+.hand{
+    width: 70px;
 }
 .hand-btn{
     background-color: #f0efef;
@@ -106,7 +109,7 @@ h1{
     text-transform: uppercase;
     word-spacing: 5px;
     letter-spacing: 2px;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 #rules-btn{

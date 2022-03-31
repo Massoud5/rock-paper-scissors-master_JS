@@ -18,52 +18,43 @@ $(document).ready(function(){
 
     $.each(handBtn, function(){
         $(handBtn).click(function(){
-            $("#bg-triangle").hide();
+            $(".triangle-items-box").hide();
         });
     });
     
     $("#paper-btn").click(function(){
-        step2();
-        $("#rock-btn").hide();
-        $("#scissors-btn").hide();
-        step3();
+
     });
     $("#rock-btn").click(function(){
-        step2();
-        $("#paper-btn").hide();
-        $("#scissors-btn").hide();
-        step3();
+
     });
     $("#scissors-btn").click(function(){
-        step2();
-        $("#rock-btn").hide();
-        $("#paper-btn").hide();
-        step3();
+
     });
     
  
 });
 
-function step2(){
-    $(".pc-waiting-box").show();
-    $("#choices-p-box").css("visibility","visible");
-};
+// function step2(){
+//     $(".pc-waiting-box").show();
+//     $("#choices-p-box").css("visibility","visible");
+// };
 
-function step3(){ //1s time made with setTimeout()
-    setTimeout(function(){
-        $(".pc-waiting-box").css("background","transparent");
+// function step3(){ //1s time made with setTimeout()
+//     setTimeout(function(){
+//         $(".pc-waiting-box").css("background","transparent");
 
-        let randomNum = Math.floor(Math.random()*3);
-        if (randomNum == 0){
-            $("#pc-paper-btn").css("visibility","visible");
-        }
-        else if (randomNum == 1){
-            $("#pc-rock-btn").css("visibility","visible"); 
-        }
-        else if (randomNum == 2){
-            $("#pc-scissors-btn").css("visibility","visible");
-        }
-    },1000);
+//         let randomNum = Math.floor(Math.random()*3);
+//         if (randomNum == 0){
+//             $("#pc-paper-btn").css("visibility","visible");
+//         }
+//         else if (randomNum == 1){
+//             $("#pc-rock-btn").css("visibility","visible"); 
+//         }
+//         else if (randomNum == 2){
+//             $("#pc-scissors-btn").css("visibility","visible");
+//         }
+//     },1000);
 
 
-};
+// };
