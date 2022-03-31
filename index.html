@@ -9,8 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/styles/colors.css">
   <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="./styles/player-styles.css">
-  <link rel="stylesheet" href="./styles/pc-styles.css">
+  <link rel="stylesheet" href="./styles/game-board-styles.css">
   <link rel="stylesheet" href="./styles/rules-style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -56,31 +55,36 @@
       
 
     <div id="choices-p-box">
-      <p class="messages p-el" id="you-picked">You Picked</p>
-      <p class="messages p-el" id="pc-picked">The House Picked</p>
+      
+      
     </div>
 
 
     <div class="game-board">
-    
-      <section class="player-hands">
+      
+      <section class="player">
 
-        <button type="button" class="player-hand-btn" id="player-paper-btn">
-          <img class="hand" src="/images/icon-paper.svg" alt="player paper icon">
-        </button>
-        
-        <button type="button" class="player-hand-btn" id="player-rock-btn">
-          <img class="hand" src="/images/icon-rock.svg" alt="player rock icon">
-        </button>
+        <p class="messages p-el" id="player-picked">You Picked</p>
 
-        <button type="button" class="player-hand-btn" id="player-scissors-btn">
-          <img class="hand" src="/images/icon-scissors.svg" alt="player scissors icon">
-        </button>
+        <div class="player-hands">
+          <button type="button" class="player-hand-btn" id="player-paper-btn">
+            <img class="hand" src="/images/icon-paper.svg" alt="player paper icon">
+          </button>
+          
+          <button type="button" class="player-hand-btn" id="player-rock-btn">
+            <img class="hand" src="/images/icon-rock.svg" alt="player rock icon">
+          </button>
+  
+          <button type="button" class="player-hand-btn" id="player-scissors-btn">
+            <img class="hand" src="/images/icon-scissors.svg" alt="player scissors icon">
+          </button>
+        </div>
+
 
       </section>
 
 
-      <section class="game-messages">
+      <!-- <section class="game-messages">
 
         <div class="final-step">
         
@@ -93,24 +97,30 @@
     
         </div>
 
-      </section>
+      </section> -->
 
 
-      <section class="pc-hands">
+      <section class="pc">
 
-        <button type="button" class="hand-btn pc-hand-btn" id="pc-paper-btn">
-          <img class="hand" src="/images/icon-paper.svg" alt="pc paper icon">
-        </button>
+        <p class="messages p-el" id="pc-picked">The House Picked</p>
 
-        <button type="button" class="hand-btn pc-hand-btn" id="pc-rock-btn">
-          <img class="hand" src="/images/icon-rock.svg" alt="pc rock icon">
-        </button>
+        <div class="pc-hands">
+          <button type="button" class="pc-hand-btn" id="pc-paper-btn">
+            <img class="hand" src="/images/icon-paper.svg" alt="pc paper icon">
+          </button>
+  
+          <button type="button" class="pc-hand-btn" id="pc-rock-btn">
+            <img class="hand" src="/images/icon-rock.svg" alt="pc rock icon">
+          </button>
+  
+          <button type="button" class="pc-hand-btn" id="pc-scissors-btn">
+            <img class="hand" src="/images/icon-scissors.svg" alt="pc scissors icon">
+          </button>
 
-        <button type="button" class="hand-btn pc-hand-btn" id="pc-scissors-btn">
-          <img class="hand" src="/images/icon-scissors.svg" alt="pc scissors icon">
-        </button>
+          <div class="pc-waiting-box"></div>
 
-        <div class="pc-waiting-box"></div>
+        </div>
+
 
       </section>
 

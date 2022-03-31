@@ -1,0 +1,49 @@
+.game-board{
+    background-color: red;
+    height: 320px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .player-hands,.pc-hands{
+
+} */
+.player-hand-btn,.pc-hand-btn{
+    background-color: #f0efef;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+#player-paper-btn,#pc-paper-btn{
+    border: solid 20px var(--PG2);
+    box-shadow: inset 0 7px #d8d6d6,0 7px var(--PG1);
+    transform: scale(1.5);
+}
+#player-scissors-btn,#pc-scissors-btn{
+    border: solid 20px var(--SG2); 
+    box-shadow: inset 0 7px #d8d6d6, 0 7px var(--SG1);
+    transform: scale(1.5);
+}
+#player-rock-btn,#pc-rock-btn{
+    border: solid 20px var(--RG2);
+    box-shadow: inset 0 7px #d8d6d6, 0 7px var(--RG1);
+    transform: scale(1.5);
+}
+
+
+.pc-waiting-box{
+    border: none;
+    background-color: transparent;
+    order: 3;
+    width: 130px;
+    height: 130px;
+    background: #1f2c47;
+    border: solid 20px transparent;
+    border-radius: 50%;
+}
