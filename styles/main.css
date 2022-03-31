@@ -6,15 +6,12 @@
 body{
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at top, var(--RaG1)30%,var(--RaG2)95%);
-    height: 100vh;
+    background: radial-gradient(circle at top, var(--RaG1),var(--RaG2));
+    height: 100%;
 }
 
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+main{
+    position: relative;
 }
 
 .title-box{
@@ -25,22 +22,20 @@ body{
     border: 2px solid var(--Header-Outline);
     border-radius: 12px;
     padding: 0 20px 0 25px;
+    margin: 120px auto auto auto;
 }
-
 h1{
     font-size: 30px;
     margin: 0;
     padding: 20px 0;
     line-height: 24px;
 }
-
 .score-box{
     background: white;
     width: 130px;
     border-radius: 6px;
     text-align: center;
 }
-
 #score-text{
     color: var(--Score-Text);
     text-transform: uppercase;
@@ -55,51 +50,27 @@ h1{
     margin: -17px 0 0 0;
 }
 
-.game-board{
-    position: relative;
-    margin-top:30px;
-    height: 500px;
-}
 
-#choices-p-box{
-    display: flex;
-    justify-content: space-around;
-    margin: auto 90px;
-    padding-top: 20px;
-    font-size: 25px;
-    text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    visibility: hidden;
-}
-
-.triangle-items{
+.triangle-items-box{
     position: absolute;
+    top: 150%;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%);
 }
-.triangle{
-    position: relative;
-} 
 #bg-triangle{
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
-
 .hands{
-    position: relative;
     height: 500px;
     width: 570px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-.pc-hands{
-    text-align: center;
+    position: relative;
 }
 .rock{
     order: 1;
@@ -111,10 +82,6 @@ h1{
     height: 200px;
     text-align: center;
 }
-.pc-hand-btn{
-    position: absolute;
-}
-
 #paper-btn,#pc-paper-btn{
     border: solid 20px var(--PG2);
     box-shadow: inset 0 7px #d8d6d6,0 7px var(--PG1);
@@ -128,23 +95,24 @@ h1{
     box-shadow: inset 0 7px #d8d6d6, 0 7px var(--RG1);
 }
 
-#pcWaiting{
-    width: 160px;
-    height: 160px;
-    background: #1f2c47;
-    border: solid 20px transparent;
-}
-.pc-waiting-box{
-    border: none;
-    background-color: transparent;
+
+#choices-p-box{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 150px;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    /* visibility: hidden; */
 }
 
-.rules{
+#rules-btn{
     position: fixed;
     bottom:120px;
     right: 2%;
-}
-#rules-el{
     background: transparent;
     border: 1px solid #7c7b7b;
     border-radius: 8px;
@@ -154,6 +122,7 @@ h1{
     letter-spacing: 3px;
     font-size: 15px;
 }
+
 
 
 

@@ -1,0 +1,20 @@
+.pc-waiting-box{
+    border: none;
+    background-color: transparent;
+    order: 3;
+    width: 130px;
+    height: 130px;
+    background: #1f2c47;
+    border: solid 20px transparent;
+    border-radius: 50%;
+}
+
+.pc-hands{
+    
+}
+.pc-hand-btn{
+    position: absolute;
+    top: 28%;
+    left: 62%;
+    visibility: hidden; 
+}

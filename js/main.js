@@ -1,6 +1,18 @@
 // JQuery
 
 $(document).ready(function(){
+    $(".pc-waiting-box").hide();
+
+    $("#rules-btn").click(function(){
+        $("figure").css("visibility","visible");
+        $("main").css("opacity","0.2");
+    });
+    $("#icon-close").click(function(){
+        $("main").css("opacity","1");
+        $("figure").css("visibility","hidden");
+    });
+
+
     
     const handBtn = $(".hand-btn");
 
@@ -14,59 +26,44 @@ $(document).ready(function(){
         step2();
         $("#rock-btn").hide();
         $("#scissors-btn").hide();
-        setTimeout(function(){
-
-        },1000);
-        // step3()
+        step3();
     });
     $("#rock-btn").click(function(){
         step2();
         $("#paper-btn").hide();
         $("#scissors-btn").hide();
+        step3();
     });
     $("#scissors-btn").click(function(){
         step2();
         $("#rock-btn").hide();
         $("#paper-btn").hide();
+        step3();
     });
     
-
-
-    
-
-    
-    $("#rules-el").click(function(){
-        $("figure").css("visibility","visible");
-        $(".container").css("opacity","0.2");
-        $(".rules").css("opacity","0.2");
-    });
-    $("#icon-close").click(function(){
-        $("figure").css("visibility","hidden");
-        $(".container").css("opacity","1");
-        $(".rules").css("opacity","1");
-    });
-    $(".container").click(function(){
-        $("figure").css("visibility","hidden");
-        $(".container").css("opacity","1");
-        $(".rules").css("opacity","1");
-    });
+ 
 });
 
 function step2(){
-
+    $(".pc-waiting-box").show();
+    $("#choices-p-box").css("visibility","visible");
 };
 
-function step3(){ //1s time maked
+function step3(){ //1s time made with setTimeout()
+    setTimeout(function(){
+        $(".pc-waiting-box").css("background","transparent");
+
+        let randomNum = Math.floor(Math.random()*3);
+        if (randomNum == 0){
+            $("#pc-paper-btn").css("visibility","visible");
+        }
+        else if (randomNum == 1){
+            $("#pc-rock-btn").css("visibility","visible"); 
+        }
+        else if (randomNum == 2){
+            $("#pc-scissors-btn").css("visibility","visible");
+        }
+    },1000);
 
 
-    let randomNum = Math.floor(Math.random()*3);
-    if (randomNum == 0){
-        $("#paper-btn").show();
-    }
-    else if (randomNum == 1){
-        $("#rock-btn").show(); 
-    }
-    else if (randomNum == 2){
-        $("#scissors-btn").show();
-    }
-}
+};
