@@ -50,6 +50,9 @@ Users should be able to:
 
 ### What I learned
 
+- jquery syntax and coding 
+-:eq(n) to target childs of an selector
+- 
 
 
 
