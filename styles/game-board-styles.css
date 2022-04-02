@@ -80,14 +80,14 @@
     bottom:120px;
     right: 20px;
 }
-.p-el{
+.message-el{
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 54px;
     font-weight: bold;
     width: -ms-max-content;
     width: max-content;
-    position: absolute;
-
+    position: fixed;
+    width: 213px;
 }
 #win,#losed{
     visibility: hidden;

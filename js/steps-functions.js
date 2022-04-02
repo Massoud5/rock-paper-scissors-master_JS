@@ -7,7 +7,7 @@ function step2(){
 
 let randomNum = Math.floor(Math.random()*3);
 
-function step3(){ //1s time made with setTimeout()
+function step3(){ 
 
     setTimeout(function(){
         $(".pc-waiting-box").hide();
@@ -27,10 +27,18 @@ function step3(){ //1s time made with setTimeout()
 
 
 function step4(){
-    $("game-messages").show();
-    $("game-messages").css("visibility","visible");
-    
-    
+    $(".game-messages").show();
+
+    if (playerScoreUp){
+        $("#win").css("visibility","visible");
+    }
+    else if (playerScoreDown){
+        $("#losed").css("visibility","visible");
+    }
+    else{
+        $("#win").css("visibility","visible");
+        $("#win").text("EQUAL");
+    }
     
     }
 
