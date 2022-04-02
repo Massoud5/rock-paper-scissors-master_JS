@@ -89,6 +89,10 @@
     position: absolute;
 
 }
+#win,#losed{
+    visibility: hidden;
+}
+
 #play-again{
    color: rgb(233, 43, 43);
    background-color: white;

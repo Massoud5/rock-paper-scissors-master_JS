@@ -8,8 +8,6 @@ function step2(){
 let randomNum = Math.floor(Math.random()*3);
 
 function step3(){ //1s time made with setTimeout()
-    let playerScore = 12;
-    const playerScoreEl = $("#score-num");
 
     setTimeout(function(){
         $(".pc-waiting-box").hide();
@@ -26,6 +24,15 @@ function step3(){ //1s time made with setTimeout()
     },500);
 }
 
-// function step4(){
 
-// }
+
+function step4(){
+    $("game-messages").show();
+    $("game-messages").css("visibility","visible");
+    
+    
+    
+    }
+
+
+
