@@ -96,6 +96,34 @@ h1{
     order: 1;
 }
 
+.final{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    visibility: hidden;
+}
+
+.result{
+    font-size: 100px;
+}
+
+#player-won{
+    color: #0bd40b;
+}
+#game-over{
+    color: #be0101;    
+}
+#restartBtn{
+    color: #030303;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 75px;
+    border-radius: 6px;
+    font-weight: bold;
+}
 
 #rules-btn{
     position: fixed;
@@ -112,31 +140,5 @@ h1{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; position: absolute;left: 50%;bottom: 3%;transform: translateX(-50%);}
+.attribution a { color: #3ea354; }
