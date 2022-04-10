@@ -7,17 +7,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/styles/colors.css">
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="./styles/game-board-styles.css">
-  <link rel="stylesheet" href="./styles/rules-style.css">
+  <link rel="stylesheet" href="/colors.css">
+  <link rel="stylesheet" href="./Triangle-styles/triangle-main.css">
+  <link rel="stylesheet" href="./Triangle-styles/triangle-game-board.css">
+  <link rel="stylesheet" href="./Triangle-styles/triangle-rules.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <title>Rock, Paper, Scissors</title>
 
 </head>
 <body>
-  <main>
+ <main>
 
     <section class="title-box">
 
@@ -60,12 +60,12 @@
 
         <p class="messages" id="player-picked">You Picked</p>
 
-        <div class="player-hands">
+        <div class="player-hands"> 
           <button type="button" class="player-hand-btn" id="player-paper-btn">
             <img class="hand" src="/images/icon-paper.svg" alt="player paper icon">
           </button>
           
-          <button type="button" class="player-hand-btn" id="player-rock-btn">
+           <button type="button" class="player-hand-btn" id="player-rock-btn">
             <img class="hand" src="/images/icon-rock.svg" alt="player rock icon">
           </button>
   
@@ -135,7 +135,7 @@
   <section class="final">
 
     <div class="result">
-      <p id="player-won">You Won!</p>
+      <p id="player-won">Congratulation!</p>
       <p id="game-over">Game Over!</p>
     </div>
 
@@ -146,12 +146,12 @@
   <figure>
     <div class="rules-header">
       <h2>RULES</h2>
-      <img id="icon-close" src="./images/icon-close.svg" alt="icon close">
+      <img id="icon-close" src="/images/icon-close.svg" alt="icon close">
     </div>
     <img src="/images/image-rules.svg" alt="rules img">
   </figure>
     
-  <script src="./js/steps-functions.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="./Triangle's_js/triangle-steps-functions.js"></script>
+  <script src="./Triangle's_js/triangle-main.js"></script>
 </body>
 </html>

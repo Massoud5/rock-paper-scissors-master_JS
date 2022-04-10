@@ -1,18 +1,17 @@
 // JQuery
 $(document).ready(function(){
-    
     $("#rules-btn").click(function(){
         $("figure").css("visibility","visible");
         $("main").css("opacity","0.2");
+        $(".final").css("opacity","0.2");
     });
     $("#icon-close").click(function(){
-        $("main").css("opacity","1");
         $("figure").css("visibility","hidden");
+        $("main").css("opacity","1");
+        $(".final").css("opacity","1");
     });
 
-    
-    $(".player-hand-btn").css("visibility","hidden");
-    
+
     $("#paper-btn").click(function(){
         step2();
         
@@ -94,13 +93,15 @@ function paperBtnClicked(){
         playerScore += 1;
         $("#score-num").text(playerScore);
         playerScoreUp = true;
-        playerScoreDown = false;  
+        playerScoreDown = false; 
+        victorAnim("#player-paper-btn"); 
     }
     else if (randomNum == 2){
         playerScore -= 1;
         $("#score-num").text(playerScore);  
         playerScoreUp = false;
         playerScoreDown = true; 
+        victorAnim("#pc-scissors-btn");
     }  
 }
 function rockBtnClicked(){
@@ -109,7 +110,8 @@ function rockBtnClicked(){
         playerScore -= 1;
         $("#score-num").text(playerScore); 
         playerScoreUp = false;
-        playerScoreDown = true;  
+        playerScoreDown = true; 
+        victorAnim("#pc-paper-btn"); 
     }
     else if (randomNum == 1){
         playerScore += 0;
@@ -121,7 +123,8 @@ function rockBtnClicked(){
         playerScore += 1;
         $("#score-num").text(playerScore); 
         playerScoreUp = true;
-        playerScoreDown = false;  
+        playerScoreDown = false; 
+        victorAnim("#player-rock-btn");  
     }
 }
 function scissorsBtnClicked(){
@@ -130,13 +133,15 @@ function scissorsBtnClicked(){
         playerScore += 1;
         $("#score-num").text(playerScore); 
         playerScoreUp = true;
-        playerScoreDown = false;    
+        playerScoreDown = false;
+        victorAnim("#player-scissors-btn");     
     }
     else if (randomNum == 1){
         playerScore -= 1;
         $("#score-num").text(playerScore);  
         playerScoreUp = false;
-        playerScoreDown = true;  
+        playerScoreDown = true; 
+        victorAnim("#pc-rock-btn");  
     }
     else if (randomNum == 2){
         playerScore += 0;

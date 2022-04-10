@@ -36,19 +36,57 @@
     position: absolute;  
 }
 #player-paper-btn,#pc-paper-btn{
-    border: solid 20px var(--PG2);
-    box-shadow: inset 0 7px #d8d6d6,0 7px var(--PG1);
+    border: solid 25px var(--PG2);
+    box-shadow: inset 0 7px #d8d6d6;
     transform: scale(1.5);
+    position: absolute;
 }
+#player-paper-btn::after,#pc-paper-btn::after{
+    position: absolute;
+    bottom: -25px;
+    left: -25px; 
+    content: '';
+    width: 200px;
+    height: 192px;
+    border-radius: 50%;
+    background: transparent;
+    border-bottom: solid 8px var(--PG1);
+}
+
 #player-scissors-btn,#pc-scissors-btn{
-    border: solid 20px var(--SG2); 
-    box-shadow: inset 0 7px #d8d6d6, 0 7px var(--SG1);
+    border: solid 25px var(--SG2); 
+    box-shadow: inset 0 7px #d8d6d6;
     transform: scale(1.5);
+    position: absolute;
 }
+#player-scissors-btn::after,#pc-scissors-btn::after{
+    position: absolute;
+    bottom: -25px;
+    left: -25px; 
+    content: '';
+    width: 200px;
+    height: 192px;
+    border-radius: 50%;
+    background: transparent;
+    border-bottom: solid 8px var(--SG1);
+}
+
 #player-rock-btn,#pc-rock-btn{
-    border: solid 20px var(--RG2);
-    box-shadow: inset 0 7px #d8d6d6, 0 7px var(--RG1);
+    border: solid 25px var(--RG2);
+    box-shadow: inset 0 7px #d8d6d6;
     transform: scale(1.5);
+    position: absolute;
+}
+#player-rock-btn::after,#pc-rock-btn::after{
+    position: absolute;
+    bottom: -25px;
+    left: -25px; 
+    content: '';
+    width: 200px;
+    height: 192px;
+    border-radius: 50%;
+    background: transparent;
+    border-bottom: solid 8px var(--RG1);
 }
 
 .pc-waiting-box{
@@ -60,6 +98,10 @@
     background: #1f2c47;
     border: solid 20px transparent;
     border-radius: 50%;
+}
+
+.victor-animation{
+    box-shadow: 0 0 0 ;
 }
 
 .game-messages{

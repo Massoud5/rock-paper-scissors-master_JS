@@ -83,17 +83,55 @@ h1{
     text-align: center;
 }
 #paper-btn{
-    border: solid 20px var(--PG2);
-    box-shadow: inset 0 7px #d8d6d6,0 7px var(--PG1);
+    border: solid 25px var(--PG2);
+    box-shadow: inset 0 7px #d8d6d6;
+    position: relative;
 }
+#paper-btn::after{
+    position: absolute;
+    bottom: -26px;
+    left: -26px;
+    content: '';
+    width: 202px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-bottom: solid 8px var(--PG1);
+}
+
 #scissors-btn{
-    border: solid 20px var(--SG2); 
-    box-shadow: inset 0 7px #d8d6d6, 0 7px var(--SG1);
+    border: solid 25px var(--SG2); 
+    box-shadow: inset 0 7px #d8d6d6;
+    position: relative;
 }
+#scissors-btn::after{
+    position: absolute;
+    bottom: -26px;
+    left: -26px;
+    content: '';
+    width: 202px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-bottom: solid 8px var(--SG1);
+}
+
 #rock-btn{
-    border: solid 20px var(--RG2);
-    box-shadow: inset 0 7px #d8d6d6, 0 7px var(--RG1);
+    border: solid 25px var(--RG2);
+    box-shadow: inset 0 7px #d8d6d6;
     order: 1;
+    position: relative;
+}
+#rock-btn::after{
+    position: absolute;
+    bottom: -26px;
+    left: -26px;
+    content: '';
+    width: 202px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-bottom: solid 8px var(--RG1);
 }
 
 .final{
