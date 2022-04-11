@@ -33,59 +33,81 @@ h1{
 .score-box{
     background: white;
     width: 130px;
+    height: 110px;
     border-radius: 6px;
     text-align: center;
+
 }
 #score-text{
     color: var(--Score-Text);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 14px;
 }
 #score-num{
     color: #525252;
     font-size: 55px;
     font-weight: bold;
-    margin: -17px 0 0 0;
+    margin: -14px 0 0 0;
 }
 
 
-.triangle-items-box{
+.pentagon-items-box{
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#bg-triangle{
+#bg-pentagon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.hands{
+.buttons{
+    position: relative;
     height: 500px;
     width: 570px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
+    transform: scale(.8);
 }
-.hand{
-    width: 70px;
-}
-.hand-btn{
+.btn-el{
     background-color: #f0efef;
     border-radius: 50%;
     width: 200px;
     height: 200px;
     text-align: center;
 }
+.img-el{
+    width: 70px;
+}
+
+#rock-btn{
+    border: solid 25px var(--RG2);
+    box-shadow: inset 0 7px #d8d6d6;
+    order: 1;
+    position: relative;
+    bottom: -322px;
+    left: 301px;
+}
+#rock-btn::after{
+    position: absolute;
+    bottom: -26px;
+    left: -26px;
+    content: '';
+    width: 202px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-bottom: solid 8px var(--RG1);
+}
+
 #paper-btn{
     border: solid 25px var(--PG2);
     box-shadow: inset 0 7px #d8d6d6;
     position: relative;
+    bottom: -107px;
+    left: 171px;
 }
 #paper-btn::after{
     position: absolute;
@@ -103,6 +125,8 @@ h1{
     border: solid 25px var(--SG2); 
     box-shadow: inset 0 7px #d8d6d6;
     position: relative;
+    bottom: 236px;
+    left: 185px;
 }
 #scissors-btn::after{
     position: absolute;
@@ -116,13 +140,14 @@ h1{
     border-bottom: solid 8px var(--SG1);
 }
 
-#rock-btn{
-    border: solid 25px var(--RG2);
+#lizard-btn{
+    border: solid 25px var(--LG2);
     box-shadow: inset 0 7px #d8d6d6;
-    order: 1;
     position: relative;
+    bottom: -114px;
+    left: -137px;
 }
-#rock-btn::after{
+#lizard-btn::after{
     position: absolute;
     bottom: -26px;
     left: -26px;
@@ -131,18 +156,40 @@ h1{
     height: 200px;
     border-radius: 50%;
     background-color: transparent;
-    border-bottom: solid 8px var(--RG1);
+    border-bottom: solid 8px var(--LG1);
+}
+
+#spock-btn{
+    border: solid 25px var(--SpG2); 
+    box-shadow: inset 0 7px #d8d6d6;
+    position: relative;
+    bottom: 307px;
+    left: 0px;
+}
+#spock-btn::after{
+    position: absolute;
+    bottom: -26px;
+    left: -26px;
+    content: '';
+    width: 202px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-bottom: solid 8px var(--SpG1);
 }
 
 #rock-btn:hover,#paper-btn:hover,
-#scissors-btn:hover{
+#scissors-btn:hover,#lizard-btn:hover,
+#spock-btn:hover{
     opacity: .9;
     cursor: pointer;
 }
 #rock-btn:active,#paper-btn:active,
-#scissors-btn:active{
+#scissors-btn:active,#lizard-btn:active,
+#spock-btn:active{
     transform: scale(1.2);
 }
+
 
 .final{
     position: absolute;
@@ -187,7 +234,7 @@ h1{
     font-size: 15px;
 }
 
-#pentagon-link{
+#triangle-link{
     position: absolute;
     bottom: 120px;
     left: 2%;
@@ -202,7 +249,7 @@ h1{
     font-weight: bold;
 }
 
-#rules-btn:hover,#pentagon-link:hover{
+#rules-btn:hover,#triangle-link:hover{
     color: hsl(237, 49%, 15%);
     background-color: #cfcccc;
     cursor: pointer;

@@ -7,17 +7,16 @@
     /* Paper Gradient */
     --PG1: #334ed6; 
     --PG2: #5671f5;
-    --Gradient-paper: radial-gradient(#5671f5 22%, #334ed6 22%);
     
     /* Rock Gradient */
     --RG1: #cf2c4a; 
     --RG2: #dd405d;
     /* Lizard Gradient */
-    --LG1: #834fe3; 
+    --LG1: #6b3ebe; 
     --LG2: #8c5de5;
-    /* Pock Gradient */
-    --PoG: #40b9ce; 
-    --PoG: #52bed1;
+    /* Spock Gradient */
+    --SpG1: #349aac; 
+    --SpG2: #52bed1;
 
     /* ### Background */
 

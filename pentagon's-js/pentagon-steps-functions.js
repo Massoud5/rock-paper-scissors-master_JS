@@ -1,33 +1,39 @@
 function step2(){
-    $(".triangle-items-box").hide();
+    $(".pentagon-items-box").hide();
     $(".game-board").css("visibility","visible");
     $(".pc-waiting-box").show();
     $(".game-messages").hide();
-    $(".pc-hand-btn").css("visibility","hidden");
-    $(".player-hand-btn").css("visibility","hidden");
+    $(".player-item-btn").css("visibility","hidden");
+    $(".pc-item-btn").css("visibility","hidden");
 }
 
-
+// pc random choose
 function step3(){ 
-    randomNum = Math.floor(Math.random()*3);
+    randomNum = Math.floor(Math.random()*5);
 
     setTimeout(function(){
         $(".pc-waiting-box").hide();
 
         if (randomNum == 0){
-            $(".pc-hand-btn:eq(0)").css("visibility","visible");
+            $(".pc-item-btn:eq(0)").css("visibility","visible");
         }
         else if (randomNum == 1){
-            $(".pc-hand-btn:eq(1)").css("visibility","visible"); 
+            $(".pc-item-btn:eq(1)").css("visibility","visible"); 
         }
         else if (randomNum == 2){
-            $(".pc-hand-btn:eq(2)").css("visibility","visible");
+            $(".pc-item-btn:eq(2)").css("visibility","visible");
+        }
+        else if (randomNum == 3){
+            $(".pc-item-btn:eq(3)").css("visibility","visible"); 
+        }
+        else if (randomNum == 4){
+            $(".pc-item-btn:eq(4)").css("visibility","visible");
         }
     },500);
 }
 
 
-
+// result of one hand
 function step4(){
     $(".game-messages").show();
 
@@ -64,11 +70,12 @@ function step4(){
         },1000);
     }
 
+    // final result
     function finalStep(){ // Called in step4
         $(".final").css("visibility","visible");
         $(".game-board").css("visibility","hidden");
-        $(".player-hand-btn").css("visibility","hidden");
-        $(".pc-hand-btn").css("visibility","hidden");
+        $(".player-item-btn").css("visibility","hidden");
+        $(".pc-item-btn").css("visibility","hidden");
     }
 }
 

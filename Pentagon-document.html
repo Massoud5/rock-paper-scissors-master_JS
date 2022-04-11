@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/colors.css">
+  <link rel="stylesheet" href="./pentagon-styles/pentagon-main.css">
+  <link rel="stylesheet" href="./pentagon-styles/pentagon-game-board.css">
+  <link rel="stylesheet" href="./pentagon-styles/pentagon-rules.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title>Lizard, Paper, Rock, Scissors, Spock</title>
+
+</head>
+<body>
+ <main>
+
+    <section class="title-box">
+
+      <h1>ROCK<br>PAPER<br>SCISSORS<br>LIZARD<br>SPOCK</h1>
+
+      <div class="score-box">
+        <p id="score-text">Score</p>
+        <p id="score-num">5</p>
+      </div>  
+  
+    </section> 
+
+
+    <section class="pentagon-items-box">
+
+      <img id="bg-pentagon" src="/images/bg-pentagon.svg" alt="bg pentagon">
+
+      <div class="buttons">
+
+        <button type="button" class="btn-el" id="rock-btn">
+          <img class="img-el" src="/images/icon-rock.svg" alt="rock icon">
+        </button>
+
+        <button type="button" class="btn-el" id="paper-btn">
+          <img class="img-el" src="/images/icon-paper.svg" alt="paper icon">
+        </button>       
+        
+        <button type="button" class="btn-el" id="scissors-btn">
+          <img class="img-el" src="/images/icon-scissors.svg" alt="scissors icon">
+        </button>
+        
+        <button type="button" class="btn-el" id="lizard-btn">
+            <img class="img-el" src="/images/icon-lizard.svg" alt="lizard icon">
+        </button>
+
+        <button type="button" class="btn-el" id="spock-btn">
+            <img class="img-el" src="/images/icon-spock.svg" alt="spock icon">
+        </button>
+        
+      </div>
+
+    </section>
+      
+
+    <div class="game-board">
+      
+      <section class="player">
+
+        <p class="messages" id="player-picked">You Picked</p>
+
+        <div class="player-items"> 
+         
+          <button type="button" class="player-item-btn" id="player-rock-btn">
+           <img class="img-el" src="/images/icon-rock.svg" alt="player rock icon">
+         </button>
+
+          <button type="button" class="player-item-btn" id="player-paper-btn">
+            <img class="img-el" src="/images/icon-paper.svg" alt="player paper icon">
+          </button>
+  
+          <button type="button" class="player-item-btn" id="player-scissors-btn">
+            <img class="img-el" src="/images/icon-scissors.svg" alt="player scissors icon">
+          </button>
+
+          <button type="button" class="player-item-btn" id="player-lizard-btn">
+            <img class="img-el" src="/images/icon-lizard.svg" alt="player lizard icon">
+          </button>
+
+          <button type="button" class="player-item-btn" id="player-spock-btn">
+            <img class="img-el" src="/images/icon-spock.svg" alt="player spock icon">
+          </button>
+
+        </div>
+
+
+      </section>
+
+
+      <section class="game-messages">
+
+        <div class="last-step">
+        
+          <div class="result-els">
+            <p class="message-el" id="win">You Win</p>
+            <p class="message-el" id="losed">You Lose</p>
+            <p class="message-el" id="equal">Equal</p>
+          </div>
+    
+          <button id="play-again" type="button">Play Again</button>
+    
+        </div>
+
+      </section>
+
+
+      <section class="pc">
+
+        <p class="messages" id="pc-picked">The House Picked</p>
+
+        <div class="pc-items">
+
+          <button type="button" class="pc-item-btn" id="pc-rock-btn">
+            <img class="img-el" src="/images/icon-rock.svg" alt="pc rock icon">
+          </button>
+
+          <button type="button" class="pc-item-btn" id="pc-paper-btn">
+            <img class="img-el" src="/images/icon-paper.svg" alt="pc paper icon">
+          </button>
+  
+          <button type="button" class="pc-item-btn" id="pc-scissors-btn">
+            <img class="img-el" src="/images/icon-scissors.svg" alt="pc scissors icon">
+          </button>
+
+          <button type="button" class="pc-item-btn" id="pc-lizard-btn">
+            <img class="img-el" src="/images/icon-lizard.svg" alt="pc lizard icon">
+          </button>
+
+          <button type="button" class="pc-item-btn" id="pc-spock-btn">
+            <img class="img-el" src="/images/icon-spock.svg" alt="pc spock icon">
+          </button>
+
+          <div class="pc-waiting-box"></div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer>
+      <div>
+      <button type="button" id="rules-btn">Rules</button>
+      <a id="triangle-link" href="/Triangle-document.html">Triangle</a>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Massoud5/rock-paper-scissors-master">Massoud</a>.
+      </div>
+    </footer>  
+  </main>
+
+  <section class="final">
+
+    <div class="result">
+      <p id="player-won">Congratulation!</p>
+      <p id="game-over">Game Over!</p>
+    </div>
+
+    <button type="button" id="restartBtn">RESTART</button>
+
+  </section>
+
+  <figure>
+    <div class="rules-header">
+      <h2>RULES</h2>
+      <img id="icon-close" src="/images/icon-close.svg" alt="icon close">
+    </div>
+    <img src="/images/image-rules-bonus.svg" alt="rules img">
+  </figure>
+  <script src="./pentagon's-js/pentagon-steps-functions.js"></script>
+  <script src="./pentagon's-js/pentagon-main.js"></script>
+</body>
+</html>

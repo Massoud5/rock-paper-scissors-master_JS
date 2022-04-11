@@ -1,0 +1,147 @@
+.game-board{
+    height: 320px;
+    width: 900px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+#player-picked,#pc-picked{
+    position: relative;
+    bottom: 100px;
+    font-size: 25px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.pc{
+   position: relative;
+   left: 32px;
+}
+#player-picked{
+    left: 30px;
+}
+#pc-picked{
+    right: 20px;
+}
+.player-item-btn,.pc-item-btn{
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;  
+}
+
+#player-rock-btn,#pc-rock-btn,
+#player-paper-btn,#pc-paper-btn,
+#player-scissors-btn,#pc-scissors-btn,
+#player-lizard-btn,#pc-lizard-btn,
+#player-spock-btn,#pc-spock-btn
+{
+    box-shadow: inset 0 7px #d8d6d6;
+    transform: scale(1.5);
+    position: absolute;
+}
+#player-rock-btn::after,#pc-rock-btn::after,
+#player-paper-btn::after,#pc-paper-btn::after,
+#player-scissors-btn::after,#pc-scissors-btn::after,
+#player-lizard-btn::after,#pc-lizard-btn::after,
+#player-spock-btn::after,#pc-spock-btn::after
+{
+    position: absolute;
+    bottom: -25px;
+    left: -25px; 
+    content: '';
+    width: 200px;
+    height: 192px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+#player-rock-btn,#pc-rock-btn{
+    border: solid 25px var(--RG2);
+}
+#player-rock-btn::after,#pc-rock-btn::after{
+    border-bottom: solid 8px var(--RG1);
+}
+
+#player-paper-btn,#pc-paper-btn{
+    border: solid 25px var(--PG2);
+}
+#player-paper-btn::after,#pc-paper-btn::after{
+    border-bottom: solid 8px var(--PG1);
+}
+
+#player-scissors-btn,#pc-scissors-btn{
+    border: solid 25px var(--SG2); 
+}
+#player-scissors-btn::after,#pc-scissors-btn::after{
+    border-bottom: solid 8px var(--SG1);
+}
+
+#player-lizard-btn,#pc-lizard-btn{
+    border: solid 25px var(--LG2); 
+}
+#player-lizard-btn::after,#pc-lizard-btn::after{
+    border-bottom: solid 8px var(--LG1);
+}
+
+#player-spock-btn,#pc-spock-btn{
+    border: solid 25px var(--SpG2);
+}
+#player-spock-btn::after,#pc-spock-btn::after{
+    border-bottom: solid 8px var(--SpG1);
+}
+
+.pc-waiting-box{
+    border: none;
+    background-color: transparent;
+    order: 3;
+    width: 195px;
+    height: 195px;
+    background: #1f2c47;
+    border: solid 20px transparent;
+    border-radius: 50%;
+}
+
+.victor-animation{
+    box-shadow: 0 0 0 ;
+}
+
+.game-messages{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    left: 65px;
+    top: 20px;
+}
+.result-els{
+    position: relative;
+    bottom:120px;
+    right: 20px;
+}
+.message-el{
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: bold;
+    width: -ms-max-content;
+    width: max-content;
+    position: fixed;
+    width: 213px;
+}
+
+#play-again{
+   color: #e92b2b;
+   background-color: white;
+   border: none;
+   text-transform: uppercase;
+   padding: 10px 75px;
+   border-radius: 6px;
+   position: relative;
+   right: 20px;
+   top: 10px;
+}

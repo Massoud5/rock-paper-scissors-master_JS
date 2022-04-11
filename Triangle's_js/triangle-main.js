@@ -2,13 +2,11 @@
 $(document).ready(function(){
     $("#rules-btn").click(function(){
         $("figure").css("visibility","visible");
-        $("main").css("opacity","0.2");
-        $(".final").css("opacity","0.2");
+        $("main").hide();
     });
     $("#icon-close").click(function(){
         $("figure").css("visibility","hidden");
-        $("main").css("opacity","1");
-        $(".final").css("opacity","1");
+        $("main").show();
     });
 
 
@@ -78,7 +76,7 @@ $(document).ready(function(){
 
 
 let randomNum = "";
-let playerScore = 2;
+let playerScore = 5;
 let playerScoreUp = ""; 
 let playerScoreDown = "";
 
