@@ -1,0 +1,35 @@
+@media (max-width: 1000px) {
+    body{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 800px) {
+    body{
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 660px) {
+    body{
+        transform: scale(0.55);
+    }
+}
+
+@media (max-width: 565px) {
+    body{
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        transform: scale(0.4);
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        transform: scale(0.25);
+    }
+}
