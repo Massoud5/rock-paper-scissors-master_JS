@@ -10,6 +10,13 @@ body{
     height: 100vh;
 }
 
+main{
+    min-height: 900px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
 .title-box{
     display: flex;
@@ -174,8 +181,8 @@ h1{
 }
 
 #rules-btn{
-    position: fixed;
-    bottom:120px;
+    position: absolute;
+    bottom:11%;
     right: 2%;
     background: transparent;
     border: 1px solid #7c7b7b;
@@ -189,7 +196,7 @@ h1{
 
 #pentagon-link{
     position: absolute;
-    bottom: 120px;
+    bottom: 11%;
     left: 2%;
     text-decoration: none;
     border: 1px solid #7c7b7b;
