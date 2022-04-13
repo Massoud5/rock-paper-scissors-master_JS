@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://massoud5.github.io/rock-paper-scissors-master/Triangle-document.html)
+- Live Site URL: [rock-paper-scissors-master](https://massoud5.github.io/rock-paper-scissors-master/Triangle-document.html)
 
 
 ### Built with
