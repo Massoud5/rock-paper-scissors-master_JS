@@ -4,13 +4,12 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
 
 ## Table of contents
 
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-  - [Author](#author)
+- [The challenge](#the-challenge)
+- [Links](#links)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
+- [Author](#author)
 
 
 
@@ -24,11 +23,6 @@ Users should be able to:
 - Maintain the state of the score after refreshing the browser _(optional)_
 - **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
 
-### Screenshot
-
-
-
-
 
 ### Links
 
@@ -41,20 +35,14 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [jQuery](https://ajax.googleapis.com/) - JS library
 
 
 ### What I learned
 
-- jquery syntax and methods
--":eq(n)" to target childs of an selector
-- "setTimeOut()" function
-
-
+- jquery syntax and methods like: <<.show()>>, <<.hide()>>, <<.click()>>, ... 
+-":eq(n)" to target childs of an selector in jQuery
+- "setTimeOut()" function in javaScript
 
 
 
@@ -62,11 +50,11 @@ Users should be able to:
 
 - [radial-gradient fonction](https://www.zonecss.fr/proprietes-css/radial-gradient-css-fonction.html) 
 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [W3Schools](https://www.w3schools.com) 
 
 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Massoud](https://github.com/Massoud5)
+- Frontend Mentor - [@Massoud5](https://www.frontendmentor.io/profile/Massoud5)
