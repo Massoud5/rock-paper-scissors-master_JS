@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/colors.css">
-  <link rel="stylesheet" href="./Triangle-styles/triangle-mobile-responsible.css">
+  <link rel="stylesheet" href="./Triangle-styles/triangle-mobile-responsive.css">
   <link rel="stylesheet" href="./Triangle-styles/triangle-main.css">
   <link rel="stylesheet" href="./Triangle-styles/triangle-game-board.css">
   <link rel="stylesheet" href="./Triangle-styles/triangle-rules.css">
@@ -20,7 +20,7 @@
 <body>
  <main>
 
-    <section class="title-box">
+    <div class="title-box">
 
       <h1>ROCK<br>PAPER<br>SCISSORS</h1>
 
@@ -29,10 +29,10 @@
         <p id="score-num">5</p>
       </div>  
   
-    </section> 
+    </div> 
 
 
-    <section class="triangle-items-box">
+    <div class="triangle-items-box">
 
       <img id="bg-triangle" src="/images/bg-triangle.svg" alt="bg triangle">
 
@@ -52,12 +52,12 @@
         
       </div>
 
-    </section>
+    </div>
       
 
     <div class="game-board">
       
-      <section class="player">
+      <div class="player">
 
         <p class="messages" id="player-picked">You Picked</p>
 
@@ -76,10 +76,10 @@
         </div>
 
 
-      </section>
+      </div>
 
 
-      <section class="game-messages">
+      <div class="game-messages">
 
         <div class="last-step">
         
@@ -93,10 +93,10 @@
     
         </div>
 
-      </section>
+      </div>
 
 
-      <section class="pc">
+      <div class="pc">
 
         <p class="messages" id="pc-picked">The House Picked</p>
 
@@ -118,7 +118,7 @@
         </div>
 
 
-      </section>
+      </div>
 
     </div>
 
@@ -134,7 +134,7 @@
     </footer>  
   </main>
 
-  <section class="final">
+  <div class="final">
 
     <div class="result">
       <p id="player-won">Congratulation!</p>
@@ -143,7 +143,7 @@
 
     <button type="button" id="restartBtn">RESTART</button>
 
-  </section>
+  </div>
 
   <figure>
     <div class="rules-header">
