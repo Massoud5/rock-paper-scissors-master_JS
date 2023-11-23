@@ -1,59 +1,31 @@
-# Frontend Mentor - Rock, Paper, Scissors solution
+# Rock-Paper-Scissors Game
 
-This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+## Introduction
 
-## Table of contents
+This project presents a web-based rendition of the classic Rock-Paper-Scissors game, enhanced with a responsive design to ensure an optimal gaming experience across a range of devices. In addition to the traditional gameplay, an alternative version titled 'Rock, Paper, Scissors, Lizard, Spock' is also available, offering a twist on the original for those seeking varied play modes.
 
-- [The challenge](#the-challenge)
-- [Links](#links)
-- [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Useful resources](#useful-resources)
-- [Author](#author)
+## Live Demo
 
+You can try out the game here: [Play Rock-Paper-Scissors](https://massoud5.github.io/rock-paper-scissors-master/Triangle-document.html)
 
-
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
-
-
-### Links
-
-- Live Site URL: [rock-paper-scissors-master](https://massoud5.github.io/rock-paper-scissors-master/Triangle-document.html)
-
-
-### Built with
+## Built With
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- [jQuery](https://ajax.googleapis.com/) - JS library
+- Flexbox layout
+- jQuery - for simplified DOM manipulation
 
+## Getting Started
 
-### What I learned
+### Prerequisites
 
-- jquery syntax and methods like: <<.show()>>, <<.hide()>>, <<.click()>>, ... 
--":eq(n)" to target childs of an selector in jQuery
-- "setTimeOut()" function in javaScript
+- Any modern web browser (Google Chrome, Firefox, Safari, etc.)
+- Internet connection (for loading jQuery from CDN)
 
+### Installation
 
+No installation is required. Simply clone the project to your local machine:
 
-### Useful resources
-
-- [radial-gradient fonction](https://www.zonecss.fr/proprietes-css/radial-gradient-css-fonction.html) 
-
-- [W3Schools](https://www.w3schools.com) 
-
-
-
-## Author
-
-- Website - [Massoud](https://github.com/Massoud5)
-- Frontend Mentor - [@Massoud5](https://www.frontendmentor.io/profile/Massoud5)
+```bash
+git clone git@github.com:Massoud5/rock-paper-scissors-master_JS.git
+```
