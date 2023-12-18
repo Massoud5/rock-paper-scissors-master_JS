@@ -9,7 +9,6 @@ $(document).ready(function(){
         $("main").show();
     });
 
-
     $("#paper-btn").click(function(){
         step2();
         
@@ -64,7 +63,6 @@ $(document).ready(function(){
         $(".player-hand-btn").css("visibility","hidden");
     });
 
-
     $("#restartBtn").click(function(){
         $("#play-again").css("opacity","1");
         $(".final").css("visibility","hidden");
@@ -73,7 +71,6 @@ $(document).ready(function(){
         $("#score-num").text(playerScore);
     });
 });
-
 
 let randomNum = "";
 let playerScore = 5;
