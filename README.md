@@ -6,7 +6,7 @@ This project presents a web-based rendition of the classic Rock-Paper-Scissors g
 
 ## Live Demo
 
-You can try out the game here: [Play Rock-Paper-Scissors](#)
+You can try out the game here: [Play Rock-Paper-Scissors](https://rock-paper-scissors-master-js.vercel.app/)
 
 ## Built With
 
